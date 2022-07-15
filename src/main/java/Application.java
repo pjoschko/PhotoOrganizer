@@ -25,6 +25,8 @@ public class Application {
                     this.numberOfFiles++;
                 });
 
+        System.out.println("Number of files: " + numberOfFiles);
+
         Stream.of(itemList)
                 .filter(item -> item.isDirectory())
                 .forEach(subdirectory -> {
@@ -32,8 +34,7 @@ public class Application {
                     this.numberOfDirectories++;
                 });
 
-        System.out.println("Number of files: " + numberOfFiles);
-        System.out.println("Number of path: " + numberOfDirectories);
+        System.out.println("Number of directories: " + numberOfDirectories);
     }
 
 }
