@@ -10,7 +10,7 @@ public class ApplicationLoader {
     static final String rootDir="/mnt/happy-cloud-photos";
 
     public static void main(String[] args) {
-        var application = new Application();
+        var application = new main.java.Application();
         application.getItemsFromDirectory(new File(rootDir));
     }
 }
